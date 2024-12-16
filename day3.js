@@ -90,3 +90,29 @@ promise.then((response) => {
 console.log(3);
 
 // 1 2 3 timerStart timerEnd worked
+
+// function p1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => reject("Error in p1"), 1000);
+//   }).catch((error) => {
+//     console.error(error);
+//   })
+// }
+
+// function p2() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve("p2 resolved"), 1000);
+//   });
+// }
+
+// function pAll() {
+//   Promise.all([p2(), p1()])
+//     .then((results) => {
+//       console.log("All data resolved:", results);
+//     })
+//     .catch((error) => {
+//       console.error("Error resolving data:", error);
+//     });
+// }
+
+// pAll();
